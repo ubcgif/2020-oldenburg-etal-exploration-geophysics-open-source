@@ -1,75 +1,32 @@
-# Template repository for papers by the GIF group
+# 3D electromagnetic modelling and inversion - a case for open source
 
-Please use this repository as a template for papers
+_Douglas W. Oldenburg, Lindsey J. Heagy, Seogi Kang and Rowan Cockett_
 
-## Repository name
+https://doi.org/10.1080/08123985.2019.1580118
 
-The naming convention should follow 
-
-```
-year-authors-journal-short-title
-```
-
-As an example for two authors: 
-```
-2023-heagy-oldenburg-gji-casing-permeability
-```
-
-if there are more than 2 authors, you can use `etal` to indicate multiple authors, e.g. 
-```
-2024-heagy-etal-tle-future-of-applied-geophysics
-```
-
-## Contents
-
-The paper should be put in a `paper` folder. You can put the original latex there. The published pdf from the journal should also be included here. 
-
-Please also include a `thumbnail.png`. This should be a high-impact figure from the paper. 
-
-## MyST.md
-
-The key file that you will need to update is the `myst.yml` file which is located in the `paper` folder. You will need to fill out the fields that are currently commented out. 
-
-The project id should follow the pattern `ubcgif-YEAR-AUTHORS-JOURNAL`, e.g. `ubcgif-2023-heagy-oldenburg-gji` or `2024-heagy-etal-tle`
-
-Descriptions of the fields is available here: https://mystmd.org/guide/frontmatter#available-frontmatter-fields
-
-## Previewing the site
-
-You can preview the build using MyST. Please have MyST installed ([instructions](https://mystmd.org/guide/installing)). From the `paper` folder, you can then run 
-
-```
-myst start
-```
-
-and a preview will launch, usually from `http://localhost:3000`
-
-Also, whenever you create a pull-request to the repo, curvenote will build you a preview 🚀. A link will be added to the comment thread that looks something like this 
-
-![image](https://github.com/ubcgif/template-repository-paper/assets/6361812/b7a144c5-8458-474b-98c4-9e5890ac859e)
-
-
-## README 
-Please use the following as a template for the 
-```
-# Template repository for papers
-
-_Authors_
-
-[https://doi.org/XXX](https://doi.org/XXX)
-
-![thumbnail](./paper/thumbnail.png)
+![Inversion Workflow Bullets](./paper/thumbnail.png)
 
 ## Summary
 
-Summary of the paper here (pulled from abstract/summary of paper) 
+Electromagnetics has an important role to play in solving the next generation of geoscience problems. These problems are multidisciplinary, complex, and require collaboration. This is especially true at the base scientific level where the underlying physical equations need to be solved, and data, associated with physical experiments, need to be inverted. In this paper, we present arguments for adopting an open-source methodology for geophysics and provide some background about open-source software for electromagnetics. Immediate benefits are the reduced time required to carry out research, being able to collaborate, having reproducible results, and being able to disseminate results quickly. To illustrate the use of an open-source methodology in electromagnetics, we present two challenges. The first is to simulate data from a time domain airborne system over a conductive plate buried in a more resistive earth. The second is to jointly invert airborne TDEM and FDEM data with ground TDEM. SimPEG, Simulation and Parameter Estimation in Geophysics, (https://simpeg.xyz) is used for the open-source software. The figures in this paper can be reproduced by downloading the Jupyter Notebooks we provide with this paper (https://github.com/simpeg-research/oldenburg-2018-AEM). Access to the source code allows the researcher to explore the simulations and inversions by changing model and inversion parameters, plot fields and fluxes to gain further insight about the EM phenomena, and solve a new research problem by using open-source software as a base. By providing results in a manner that allows others to reproduce, further explore, and even extend them, we hope to demonstrate that an open-source paradigm has the potential to enable more rapid progress of the geophysics community as a whole.
+
 
 ## Citation
 
-Please include the formatted citation along with bibtex for the reference
+Oldenburg, D. W., Heagy, L. J., Kang, S., & Cockett, R. (2019). 3D electromagnetic modelling and inversion: a case for open source. Exploration Geophysics, 51(1), 25–37. https://doi.org/10.1080/08123985.2019.1580118
 
 ```
+@article{oldenburgy_inversion_2020,
+         author = {Douglas W. Oldenburg, Lindsey J. Heagy, Seogi Kang and Rowan Cockett},
+         title = {3D electromagnetic modelling and inversion: a case for open source},
+         journal = {Exploration Geophysics},
+         volume = {51},
+         number = {1},
+         pages = {25--37},
+         year = {2020},
+         publisher = {Taylor \& Francis},
+         doi = {10.1080/08123985.2019.1580118},
+         URL = {https://doi.org/10.1080/08123985.2019.1580118}
+}
 
-## Examples
-- https://github.com/ubcgif/2023-heagy-oldenburg-gji-casing-permeability
-- https://github.com/ubcgif/2024-heagy-etal-tle-future-of-applied-geophysics
+```
