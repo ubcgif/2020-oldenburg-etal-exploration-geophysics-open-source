@@ -1,7 +1,7 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: ubcgif-2020-oldenburg-etal-exploration-geophysics
+  id: ubcgif-2020-oldenburg-etal-exploration-geo
   title: 3D electromagnetic modelling and inversion - a case for open source
   description: Presenting arguments for adopting an open-source methodology for geophysics and provide some background about open-source software for electromagnetics.
   authors:
